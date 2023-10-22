@@ -1,0 +1,96 @@
+/* Globales */
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        150deg,
+      #9500ff,
+      #09f,
+      #00DDFF
+    );
+}
+
+.resetear-input{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+
+/* Diseño */
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.numero {
+    width: 10rem;
+    background: white;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.generador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.password {
+    font-size: 2rem;
+    color: white;
+    border: 1px solid rgba(236, 215, 215, 0.452);
+    border-radius: 2rem;
+    padding: 2rem 4rem;
+}
+@media (min-width: 412px) {
+    .password {
+        font-size: 2.5rem;
+    }
+}
+@media (min-width: 480px) {
+    .password {
+        font-size: 3rem;
+    }
+}
+@media (min-width: 768px) {
+    .password {
+        font-size: 3.5rem;
+    }
+}
+
+.boton {
+    display: flex;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(211, 94, 211);
+    color: white;
+    transition: background-color .2s ease;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.boton:hover {
+    background: rgb(165, 40, 165);
+}
